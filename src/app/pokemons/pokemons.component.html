@@ -1,0 +1,16 @@
+
+<div class="row conteiner col-12 d-flex">
+  <div class="conteiner my-5 mx-5 col-2" *ngFor="let personagen of personagens">
+  <div class="card" style="width: 18rem;">
+  <img [src]="personagen.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{personagen.name}}</h5>
+    <p class="card-text">Especie : {{personagen.species}}</p>
+    <p class="card-text">status : {{personagen.status}}</p>
+    <p class="card-text">Genero : {{personagen.gender}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</div>
+
