@@ -7,13 +7,13 @@ import { BASE_URL } from 'src/app/app.baseUrl';
   providedIn: 'root'
 })
 export class ListService {
-  apiURL : string = BASE_URL
+
 
   constructor(private httpCliente :HttpClient) { }
 
   getList():Observable<any>{
 
-    return this.httpCliente.get<any>(this.apiURL)
+    return this.httpCliente.get<any>(BASE_URL)
 
   }
 }

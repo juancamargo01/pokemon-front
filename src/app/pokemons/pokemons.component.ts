@@ -7,9 +7,15 @@ import { ListService } from '../shared/services/list.service';
   styleUrls: ['./pokemons.component.css']
 })
 export class PokemonsComponent implements OnInit {
-  personagens:Array<any> = []
+  pokemons:Array<any> = []
+  audio = new Audio("http://music.ogg");
+  selectPokemon!: boolean
+  pokemonSelecionado = document.querySelector('.list')
 
-  constructor(private listService: ListService) { }
+  constructor(private listService: ListService) {
+    this.selectPokemon = false
+
+  }
 
   ngOnInit(): void {
     this.getlist()
@@ -17,10 +23,35 @@ export class PokemonsComponent implements OnInit {
 
   getlist(){
     this.listService.getList().subscribe(result =>{
-      this.personagens = result?.results;
-      console.log(this.personagens)
+
+      this.pokemons = result;
+      console.log(this.pokemons)
     })
 
   }
+
+
+  playSound(){
+    let audio = new Audio();
+    audio.src ="../assets/audio/picachu.mp3"
+
+
+    audio.load();
+    audio.play();
+    this.selectPokemon = true
+
+    this.pokemons.forEach(element => {
+
+
+     this.pokemonSelecionado?.classList.remove('mouseOn')
+     this.pokemonSelecionado?.classList.add('selecionado')
+
+    });
+
+
+
+    }
+
+
 
 }

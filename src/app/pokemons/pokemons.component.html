@@ -1,14 +1,15 @@
 
-<div class="row conteiner col-12 d-flex">
-  <div class="conteiner my-5 mx-5 col-2" *ngFor="let personagen of personagens">
-  <div class="card" style="width: 18rem;">
-  <img [src]="personagen.image" class="card-img-top" alt="...">
+<div class="row conteiner col-12 d-flex ">
+  <div class=" conteiner my-5 mx-5 col-2" id="list" *ngFor="let pokemon of pokemons" >
+  <div class="card mouseOn " (click)="playSound()"style="width: 18rem;" id="pokemon{{pokemon.id}}">
+  <img [src]="pokemon.url" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">{{personagen.name}}</h5>
-    <p class="card-text">Especie : {{personagen.species}}</p>
-    <p class="card-text">status : {{personagen.status}}</p>
-    <p class="card-text">Genero : {{personagen.gender}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{pokemon.nome}}</h5>
+    <p class="card-text">Elemento : {{pokemon.elemento}}</p>
+    <p class="card-text">Nivel : {{pokemon.nivel}}</p>
+    <p class="card-text">ATaque : {{pokemon.ataque}}</p>
+    <p class="card-text">Defesa : {{pokemon.defesa}}</p>
+
   </div>
 </div>
 </div>

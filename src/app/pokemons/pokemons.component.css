@@ -1,0 +1,11 @@
+.mouseOn{
+  border: #000 solid 1px;
+
+}
+.mouseOn:hover{
+  border: rgb(84, 199, 245) solid 5px;
+}
+
+.selecionado{
+  border: rgb(192, 17, 17) solid 5px;
+}
