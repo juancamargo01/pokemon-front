@@ -3,9 +3,15 @@
 
 }
 .mouseOn:hover{
-  border: rgb(84, 199, 245) solid 5px;
+  border: rgb(223, 74, 74) solid 5px;
+}
+.baner{
+  width: 100%;
 }
 
-.selecionado{
-  border: rgb(192, 17, 17) solid 5px;
+
+
+.titulo{
+  font-size: 50px;
+  color: rgb(3, 8, 53);
 }

@@ -1,0 +1,24 @@
+.progress {
+  background: #eef8da;
+  border-color: solid 1px #99ce28;
+}
+
+
+.progress-bar-xp {
+  background: #99ce28 ;
+
+}
+
+
+
+
+.progress-bar-hp {
+  background: #99ce28 ;
+
+}
+
+.icon{
+  border: solid black 2px;
+  border-radius: 50% !important;
+  margin-left: 25%;
+}

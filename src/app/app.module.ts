@@ -11,6 +11,9 @@ import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { HomeComponent } from './home/home.component';
 import { PokemonsComponent } from './pokemons/pokemons.component';
+import { PokemonSelecionadoComponent } from './pokemon-selecionado/pokemon-selecionado.component';
+import { FasesPokemonComponent } from './fases-pokemon/fases-pokemon.component';
+import { MundosComponent } from './mundos/mundos.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { PokemonsComponent } from './pokemons/pokemons.component';
     RodapeComponent,
     HomeComponent,
     PokemonsComponent,
+    PokemonSelecionadoComponent,
+    FasesPokemonComponent,
+    MundosComponent,
     
   ],
   imports: [

@@ -1,14 +1,21 @@
 
 <div class="row conteiner col-12 d-flex ">
+  <div class="text-center titulo">Escolha seu pokemon</div>
+  <img src="../../assets/images/home-image-banner.jpg"   alt="home" class="baner">
   <div class=" conteiner my-5 mx-5 col-2" id="list" *ngFor="let pokemon of pokemons" >
-  <div class="card mouseOn " (click)="playSound()"style="width: 18rem;" id="pokemon{{pokemon.id}}">
-  <img [src]="pokemon.url" class="card-img-top" alt="...">
+  <div class="card mouseOn " (click)="playSound(pokemon.audio)"style="width: 18rem;" id="pokemon{{pokemon.id}}">
+  <img [src]="pokemon.url"  class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{pokemon.nome}}</h5>
     <p class="card-text">Elemento : {{pokemon.elemento}}</p>
     <p class="card-text">Nivel : {{pokemon.nivel}}</p>
     <p class="card-text">ATaque : {{pokemon.ataque}}</p>
     <p class="card-text">Defesa : {{pokemon.defesa}}</p>
+    <div class="d-grid gap-2">
+      <button class="btn btn-danger" [routerLink]="['/pokemon',pokemon.id]" type="button">Escolher</button>
+
+    </div>
+
 
   </div>
 </div>

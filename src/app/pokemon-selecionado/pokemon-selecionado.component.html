@@ -1,0 +1,117 @@
+
+
+
+<div class="row conteiner col-12 d-flex mx-1 my-1 px-1">
+  <div class=" card mx-3 my-3" style="max-width: 640px;">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img [src]="meuPokemon.url" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title">{{meuPokemon.nome}}</h2>
+          <h3 class="card-title">Nivel : {{meuPokemon.nivel}}</h3>
+          <div class="progress my-1">
+            <p class="card-text">XP : </p>
+            <div class="progress-bar-xp w-{{meuPokemon.xpAtual}}">
+              <p class=""> {{meuPokemon.xpAtual}}</p>
+            </div>
+          </div>
+          <p class="card-text">{{meuPokemon.descricao}}.</p>
+          <div class="progress my-2">
+            <p class="card-text">HP :</p>
+            <div class="progress-bar-hp w-{{meuPokemon.hp}}">{{meuPokemon.hp}}</div>
+          </div>
+          <h3 class="card-title">Ataque : {{meuPokemon.ataque}}</h3>
+          <h3 class="card-title">Defesa : {{meuPokemon.defesa}}</h3>
+          <h3 class="card-title">Ataque Especial : {{meuPokemon.ataqueEspecial}}</h3>
+          <h3 class="card-title">Defesa Especial : {{meuPokemon.defesaEspecial}}</h3>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card mx-3 my-3" style="max-width: 640px;">
+    <h3 class="card-title text-center ">PokeDolar: 200,00$</h3>
+    <div class="row g-0">
+      <div class="col-md-5 mx-1">
+        <img src="../../assets/images/kit-medico.jpg" style="width: 150px; height: 150px;"
+          class="img-fluid  rounded-start" alt="...">
+        <h4 class="text-center "> kit medico </h4>
+        <p class="text-center " style="border: solid rgb(177, 54, 54) 4px;"> 2 </p>
+        <div class="d-grid gap-2">
+          <button class="btn btn-danger my-2" type="button">Usar</button>
+        </div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-danger my-2" type="button">Comprar</button>
+        </div>
+      </div>
+      <div class="col-md-5 mx-1">
+        <div class="">
+          <img src="../../assets/images/fruta.jpg" style="width: 150px; height: 150px;"
+            class="img-fluid   rounded-start" alt="...">
+          <h4 class="text-center "> Fruta da Evolução </h4>
+          <p class="text-center " style="border: solid rgb(177, 54, 54) 4px;"> 1 </p>
+          <div class="d-grid gap-0">
+            <button class="btn btn-danger my-2" type="button">Usar</button>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-danger my-2" type="button">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-mundos></app-mundos>
+
+
+  <div class=" card mx-3 my-3" style="max-width: 1320px;">
+    <h3 class="card-title text-center my-3">Menu </h3>
+
+
+    <div class="row g-0">
+      <div class="col-md-3 mx-1" >
+        <div  >
+          <img  src="../../assets/images/centro pokemon.png"  style="width: 150px; height: 150px; "
+            class="img-fluid  icon rounded-start" alt="...">
+          <h4 class="text-center "> Centro Pokemon </h4>
+         </div>
+      </div>
+      <div class="col-md-3 mx-1">
+        <div class="">
+          <img src="../../assets/images/pokemon-historia.jpg" style="width: 150px; height: 150px;"
+            class="img-fluid  icon rounded-start" alt="...">
+          <h4 class="text-center "> Modo Historia </h4>
+         </div>
+      </div>
+      <div class="col-md-3 mx-1">
+        <div class="">
+          <img src="../../assets/images/pokebola.jpg" style="width: 150px; height: 150px;"
+            class="img-fluid  icon rounded-start" alt="...">
+          <h4 class="text-center "> Captura Pokemon </h4>
+         </div>
+      </div>
+
+
+
+
+    <div class="col-md-2 mx-1">
+      <div class="">
+        <img src="../../assets/images/pvp.jpg" style="width: 150px; height: 150px;"
+          class="img-fluid icon  rounded-start" alt="...">
+        <h4 class="text-center "> Modo PVP </h4>
+       </div>
+    </div>
+
+    </div>
+
+  </div>
+
+
+
+  <app-fases-pokemon></app-fases-pokemon>
+
+
